@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="index, follow" />
+
+  <title>Redirect - SonarSource</title>
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" href="/favicon-152.png">
+
+  <script type="text/javascript" src="/config.js"></script>
+<script type="text/javascript">
+(function(window,document) {
+  if (window.config && window.config.google && window.config.google.analyticsToken) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window, document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', window.config.google.analyticsToken, 'auto');
+    ga('send', 'pageview');
+
+
+  } else {
+    console.warn('No config found, Google Analytics is emulated on console');
+    window.ga = function() {
+      console.log(arguments);
+    };
+  }
+})(window,document);
+</script>
+
+  <script type="text/javascript" src="/lib/redirect.js"></script>
+  <style type="text/css">
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+ul {
+  list-style: none;
+}
+li {
+  line-height: 1.5;
+}
+  </style>
+</head>
+
+  <body>
+    <script type="text/javascript">
+  redirect('https://docs.sonarqube.org/display/SCAN/Analyzing+Source+Code');
+</script>
+
+<p>Please <a href="https://docs.sonarqube.org/display/SCAN/Analyzing+Source+Code">click here</a> if you are not redirected automatically.</p>
+
+  </body>
+</html>
